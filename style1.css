@@ -1,0 +1,303 @@
+/* Global reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #cee1f3;
+    position: static;
+    padding: 2rem 0;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 1.5rem;
+    font-size: 1.5vw;
+}
+
+.Menu ul li {
+    margin: 0 01rem;
+}
+
+.Menu ul li img {
+    vertical-align: top;
+}
+
+.sreachicon {
+    width: 26px;
+    vertical-align: top;
+}
+
+/* Main container */
+.container {
+    max-width: 100vw;
+}
+
+/* Main product design section */
+#Design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Productimage {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-bottom: 2rem;
+    background-color: #cee1f3;
+}
+
+.Productimage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Productdetails {
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding: 2rem 2rem;
+}
+
+.Productdetails h2 {
+    font-size: 4vw;
+    color: #024ea2;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.Productdetails h3 {
+font-size: 25px;
+}
+
+.Productdetails p {
+    font-size: 18px;
+    line-height: 5.6;
+    text-align: justify;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 18px;
+    color: #024ea2;
+    background-color: #cee1f3;
+    border: none;
+    border-radius: 14px;
+    margin: 1rem 1.5rem 0.5rem 0rem;
+}
+
+/* Description section */
+.description {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.description h1 {
+    font-size: 3vw;
+    color: #024ea2;
+    padding: 2rem 0;
+}
+
+.description p {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Benefits section */
+.benefits {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.benefits h1 {
+    font-size: 3vw;
+    color: #024ea2;
+    padding: 2rem 0;
+}
+
+.benefitdetails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.details {
+    padding: 2rem;
+    background-color: beige;
+    text-align: center;
+}
+
+.details img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.details hr {
+    height: 3px;
+    width: 92%;
+    margin: 1rem auto;
+    background-color: #024ea2;
+    border: none;
+}
+
+.details h3 {
+    font-size: 20px;
+    color: grey;
+    font-weight: 100;
+}
+
+/* Key ingredients section */
+.keyingredients {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.keyingredients h1 {
+    font-size: 3vw;
+    color: #024ea2;
+    padding: 2rem 0;
+}
+
+.ingredientsvalue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.ingredients img {
+    width: 58%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #cee1f3;
+    padding: 1rem;
+}
+
+.ingredients h2 {
+    font-size: 30px;
+    margin: 1rem 0;
+}
+
+.ingredients p {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer section */
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #cee1f3;
+}
+
+.h3 {
+    font-size: 24px;
+    color: #024ea2;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1024px) {
+    .Navbar {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+
+    .Menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 2vw;
+    }
+
+    .Menu ul li {
+        margin: 0.5rem;
+    }
+
+    .Productdetails {
+        padding: 2rem 1rem 2rem 0rem;
+
+    }
+
+    .Productdetails h2 {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .Productdetails h3 {
+        padding-top: 1.5rem;
+    }
+
+    .Productdetails p {
+        line-height: 1.6;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .description h1,
+    .benefits h1,
+    .keyingredients h1 {
+        font-size: 36px;
+    }
+
+    .ingredientsvalue {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Productimage {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .Menu ul {
+        font-size: 2.5vw;
+    }
+
+    .Productdetails {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+
+    }
+
+    .benefitdetails {
+        grid-template-columns: 1fr;
+    }
+
+    .details {
+        padding: 1.5rem;
+    }
+
+    .details img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description h1,
+    .benefits h1,
+    .keyingredients h1 {
+        font-size: 32px;
+    }
+
+    .description p,
+    .benefits p,
+    .keyingredients p {
+        font-size: 14px;
+    }
+}
